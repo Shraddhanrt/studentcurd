@@ -14,6 +14,12 @@ class StudentController extends Controller
         // dd($students);
         return view('student.index', compact('students'));
     }
+    public function test()
+    {
+        $students = Student::all();
+        // dd($students);
+        return view('student.index', compact('students'));
+    }
 
     public function create()
     {
